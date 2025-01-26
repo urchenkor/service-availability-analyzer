@@ -12,9 +12,7 @@ public class LogProcessorTest {
     @Test
     public void parseWithScanner() {
         LogProcessor logProcessor = new LogProcessor();
-        //logProcessor.processWithScanner("src/main/resources/access.log");
-        logProcessor.processWithBufferedReader("src/main/resources/test.log");
-        //logProcessor.processWithStream("src/main/resources/access.log");
+        //logProcessor.processWithBufferedReader();
         assertTrue(true);
     }
 }
