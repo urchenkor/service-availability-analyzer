@@ -2,11 +2,13 @@ package urchenkor.vlrutest.model;
 
 public class InputParamsModel {
     private double availability;
-    private int time;
+    private double maxResponseTime;
+    private long statisticInterval;
 
-    public InputParamsModel(double availability, int time) {
+    public InputParamsModel(double availability, double maxResponseTime, long statisticInterval) {
         this.availability = availability;
-        this.time = time;
+        this.maxResponseTime = maxResponseTime;
+        this.statisticInterval = statisticInterval;
     }
 
     public double getAvailability() {
@@ -17,11 +19,19 @@ public class InputParamsModel {
         this.availability = availability;
     }
 
-    public int getTime() {
-        return time;
+    public double getMaxResponseTime() {
+        return maxResponseTime;
     }
 
-    public void setTime(int time) {
-        this.time = time;
+    public void setMaxResponseTime(double maxResponseTime) {
+        this.maxResponseTime = maxResponseTime;
+    }
+
+    public long getStatisticInterval() {
+        return statisticInterval;
+    }
+
+    public void setStatisticInterval(long statisticInterval) {
+        this.statisticInterval = statisticInterval;
     }
 }
